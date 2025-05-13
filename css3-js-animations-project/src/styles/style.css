@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+    color: #333; /* Dark text for contrast */
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6f61; /* Vibrant coral */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Section Styles */
+main section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #ffffff; /* White card background */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+main section h2 {
+    color: #ff6f61; /* Coral for headings */
+    margin-bottom: 15px;
+}
+
+/* Button Styles */
+button {
+    background-color: #4ecdc4; /* Aqua */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #3ba89a; /* Darker aqua */
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(78, 205, 196, 0.5);
+}
+
+/* Image Styles */
+img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff6f61; /* Coral */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animation Keyframes */
+@keyframes pulse {
+    0% {
+        background-color: #4ecdc4;
+        box-shadow: 0 0 5px #4ecdc4;
+    }
+    100% {
+        background-color: #3ba89a;
+        box-shadow: 0 0 20px #3ba89a;
+    }
+}
+
+.animated-button {
+    background-color: #4ecdc4;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.animated-button:hover {
+    animation: pulse 1s infinite alternate;
+}
+
+/* CSS for animated text */
+@keyframes clickEffect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.clicked-animation {
+    animation: clickEffect 1s ease;
+}
